@@ -1,78 +1,58 @@
 {
-  "breakdown": [
-    { "source": "Ministry of Science and Technology, Government of Bangladesh", "percentage": 12 },
-    { "source": "Japan Society for the Promotion of Science", "percentage": 11 },
-    { "source": "Bangladesh Council of Scientific and Industrial Research", "percentage": 11 },
-    { "source": "University Grants Commission of Bangladesh", "percentage": 11 },
-    { "source": "UNICEF", "percentage": 11 },
-    { "source": "Trinity College, University of Oxford", "percentage": 11 },
-    { "source": "Trinity College Dublin", "percentage": 11 },
-    { "source": "RIKEN", "percentage": 11 },
-    { "source": "Wuhan Textile University", "percentage": 11 }
-  ],
-  "cards": [
-    {
-      "title": "Ministry of Science and Technology, Government of Bangladesh",
-      "description": "Major national funding body supporting science and innovation research initiatives.",
-      "icon": "fas fa-landmark",
-      "bg": "#fdf4f4",
-      "color": "#9b2e2b"
-    },
-    {
-      "title": "Japan Society for the Promotion of Science",
-      "description": "Supports collaborative and advanced research programs through international cooperation.",
-      "icon": "fas fa-globe-asia",
-      "bg": "#e8f4f8",
-      "color": "#004080"
-    },
-    {
-      "title": "Bangladesh Council of Scientific and Industrial Research",
-      "description": "Promotes applied science and industrially relevant research outcomes.",
-      "icon": "fas fa-flask",
-      "bg": "#f0fff0",
-      "color": "#155724"
-    },
-    {
-      "title": "University Grants Commission of Bangladesh",
-      "description": "Provides academic research grants and institutional research support.",
-      "icon": "fas fa-graduation-cap",
-      "bg": "#fff8e1",
-      "color": "#856404"
-    },
-    {
-      "title": "UNICEF",
-      "description": "Contributes to social impact and public welfare oriented research initiatives.",
-      "icon": "fas fa-hands-helping",
-      "bg": "#eef7ff",
-      "color": "#0b5ed7"
-    },
-    {
-      "title": "Trinity College, University of Oxford",
-      "description": "International academic collaboration partner supporting research and training.",
-      "icon": "fas fa-university",
-      "bg": "#f7f3ff",
-      "color": "#5e35b1"
-    },
-    {
-      "title": "Trinity College Dublin",
-      "description": "Provides international collaboration opportunities in interdisciplinary research.",
-      "icon": "fas fa-university",
-      "bg": "#f4fff2",
-      "color": "#2e7d32"
-    },
-    {
-      "title": "RIKEN",
-      "description": "Supports advanced scientific partnership and high-impact research collaboration.",
-      "icon": "fas fa-microscope",
-      "bg": "#f2fbff",
-      "color": "#006064"
-    },
-    {
-      "title": "Wuhan Textile University",
-      "description": "Academic partner supporting textile and material science oriented research.",
-      "icon": "fas fa-atom",
-      "bg": "#fff5f0",
-      "color": "#bf360c"
-    }
+  "sponsors": [
+    "Ministry of Science and Technology, Government of the People's Republic of Bangladesh",
+    "Japan Society for the Promotion of Science",
+    "Bangladesh Council of Scientific and Industrial Research",
+    "University Grants Commission of Bangladesh",
+    "Princess Nourah Bint Abdulrahman University",
+    "Natural Sciences and Engineering Research Council of Canada",
+    "Multimedia University",
+    "Ministry of Education, Culture, Sports, Science and Technology",
+    "King Saud University",
+    "Wuhan Textile University",
+    "VLIRUOS",
+    "University of Saskatchewan",
+    "University of Newcastle Australia",
+    "University of New South Wales",
+    "University of Chittagong",
+    "Universiteit Gent",
+    "Umm Al-Qura University",
+    "UNICEF",
+    "Trinity College, University of Oxford",
+    "Trinity College Dublin",
+    "Tokyo Metropolitan University",
+    "Styrelsen for Internationellt Utvecklingssamarbete",
+    "Shizuoka University",
+    "RIKEN",
+    "Otsuka Pharmaceutical",
+    "Norges Teknisk-Naturvitenskapelige Universitet",
+    "New Energy and Industrial Technology Development Organization",
+    "National Science and Technology Planning Project",
+    "National Institute of Ecology",
+    "National Institute of Agricultural Biotechnology",
+    "National Institute of Advanced Industrial Science and Technology",
+    "Nara Institute of Science and Technology",
+    "Ministry of Science and Technology, Taiwan",
+    "Ministry of Science and Technology, Israel",
+    "Ministry of Science and Technology",
+    "Ministry of Education, Government of the People's Republic of Bangladesh",
+    "Ministry of Education - Kingdom of Saudi Arabia",
+    "Macquarie University",
+    "Krishi Gobeshona Foundation",
+    "King Salman Center for Disability Research",
+    "Jashore University of Science and Technology",
+    "JST-Mirai Program",
+    "Institute of Science and Technology Austria",
+    "Hunter Medical Research Institute",
+    "Hunter Cancer Research Alliance",
+    "Direktion fur Entwicklung und Zusammenarbeit",
+    "Department of Science and Technology, Ministry of Science and Technology, India",
+    "Department of Environmental Sciences",
+    "Deanship of Scientific Research, King Khalid University",
+    "China Scholarship Council",
+    "Centre for Ecosystem Science, University of New South Wales",
+    "Australian School of Taxation, University of New South Wales",
+    "Australian Centre for International Agricultural Research",
+    "ACE Foundation"
   ]
 }

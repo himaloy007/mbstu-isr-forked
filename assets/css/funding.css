@@ -2,102 +2,68 @@
   background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-main) 100%);
 }
 
-.funding-chart-box {
+.funding-sponsors-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.funding-sponsor-card {
   background: var(--color-white);
-  padding: 2.5rem;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
+  border-radius: 14px;
+  padding: 1rem 1rem 1.05rem;
   border: 1px solid var(--border-color);
-}
-
-.chart-title {
-  color: var(--color-primary);
-  font-weight: 700;
-  margin-bottom: 2rem;
-  font-size: 1.25rem;
-}
-
-.funding-bar-wrap {
-  margin-bottom: 1.5rem;
-}
-
-.funding-label {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.6rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.75rem;
   align-items: center;
-}
-
-.funding-label span {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-main);
-}
-
-.funding-label .pct {
-  color: var(--color-accent);
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.funding-bar-track {
-  height: 12px;
-  background: var(--bg-main);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
-}
-
-.funding-bar-fill {
-  height: 100%;
-  border-radius: 6px;
-  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
-  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-  width: 0; /* Animated via JS */
-}
-
-.funding-source-card {
-  background: var(--color-white);
-  border-radius: var(--radius-md);
-  padding: 1.8rem;
-  border: 1px solid var(--border-color);
-  display: flex;
-  align-items: flex-start;
-  gap: 1.2rem;
   transition: var(--transition-smooth);
-  height: 100%;
+  min-height: 86px;
+  grid-column: span 3;
 }
 
-.funding-source-card:hover {
+.funding-sponsor-card:hover {
   box-shadow: var(--shadow-sm);
   transform: translateY(-4px);
   border-color: rgba(15, 42, 74, 0.2);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fcfb 100%);
 }
 
-.funding-source-icon {
-  width: 56px;
-  height: 56px;
-  flex-shrink: 0;
-  border-radius: 50%;
+.funding-sponsor-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
-  background: var(--bg-main);
-  border: 1px solid rgba(0,0,0,0.05);
+  font-size: 1rem;
+  color: #0f3d58;
+  background: #e7f5f4;
+  border: 1px solid #cdebea;
 }
 
-.funding-source-content h6 {
-  font-size: 0.95rem;
+.funding-sponsor-card h6 {
+  font-size: 0.86rem;
   font-weight: 700;
   color: var(--text-main);
-  margin-bottom: 0.5rem;
+  margin: 0;
   line-height: 1.4;
 }
 
-.funding-source-content p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin: 0;
+@media (max-width: 1200px) {
+  .funding-sponsor-card {
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 992px) {
+  .funding-sponsor-card {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 576px) {
+  .funding-sponsor-card {
+    grid-column: span 12;
+  }
 }

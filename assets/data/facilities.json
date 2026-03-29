@@ -4,41 +4,76 @@
     "title": "Systems Security and Innovation (SSI) Lab",
     "description": "Focuses on cutting-edge research in cybersecurity, secure software systems, blockchain technologies, and privacy-preserving solutions. It supports the design and evaluation of resilient digital infrastructures for Industry 4.0 and smart systems.",
     "meta": ["Research Facility", "Cybersecurity & Blockchain"],
-    "icon": "fas fa-shield-alt"
+    "icon": "fas fa-shield-alt",
+    "department": "CSE",
+    "departments": ["CSE", "ICT"],
+    "image": "public/photos/cslab.jpg",
+    "shortDescription": "Secure systems research hub for cyber defense, blockchain assurance, and privacy engineering."
   },
   {
     "id": 2,
     "title": "IoT and Robotics Lab",
     "description": "Develops intelligent, connected systems integrating sensors, embedded platforms, and automation technologies. Emphasizes smart environments, industrial automation, and real-time data-driven robotic applications.",
     "meta": ["Research Facility", "IoT & Automation"],
-    "icon": "fas fa-robot"
+    "icon": "fas fa-robot",
+    "department": "ICT",
+    "departments": ["ICT", "TE"],
+    "image": "public/photos/drone.jpg",
+    "shortDescription": "Applied prototyping space for sensors, edge systems, autonomous robotics, and smart automation."
   },
   {
     "id": 3,
     "title": "AI and Machine Learning Lab",
     "description": "Advances research in data analytics, deep learning, natural language processing, and computer vision. Aims to solve real-world problems through intelligent algorithms and scalable AI-driven solutions.",
     "meta": ["Research Facility", "AI & Data Science"],
-    "icon": "fas fa-brain"
+    "icon": "fas fa-brain",
+    "department": "CSE",
+    "departments": ["CSE", "ICT"],
+    "image": "public/photos/cslab2.jpg",
+    "shortDescription": "Computational research environment for ML pipelines, computer vision, NLP, and predictive analytics."
   },
   {
     "id": 4,
     "title": "Bioinformatics and Drug Designing Lab",
     "description": "Applies computational techniques to biological data analysis and drug discovery. Focuses on genomics, proteomics, molecular modelling, and in silico drug design.",
     "meta": ["Research Facility", "Bioinformatics"],
-    "icon": "fas fa-dna"
+    "icon": "fas fa-dna",
+    "department": "BMB",
+    "departments": ["BMB", "PHARMACY"],
+    "image": "public/photos/bmb.jpeg",
+    "shortDescription": "Integrates molecular data science with virtual screening and computational pathways for drug discovery."
   },
   {
     "id": 5,
     "title": "Molecular Biology Lab",
     "description": "Conducts experimental research on cellular and molecular mechanisms of life. Supports studies in genetics, microbiology, and biotechnology with applications in health, agriculture, and environmental science.",
     "meta": ["Research Facility", "Genetics & Biotechnology"],
-    "icon": "fas fa-flask"
+    "icon": "fas fa-flask",
+    "department": "BGE",
+    "departments": ["BMB", "BGE"],
+    "image": "public/photos/bmb.jpeg",
+    "shortDescription": "Wet-lab platform for molecular assays, genetic analysis, and translational biotechnology studies."
   },
   {
     "id": 6,
     "title": "Material Science Lab",
     "description": "Explores the synthesis, characterization, and application of advanced materials. Research areas include nanomaterials, polymers, and functional materials for energy, electronics, and environmental sustainability.",
     "meta": ["Research Facility", "Advanced Materials"],
-    "icon": "fas fa-atom"
+    "icon": "fas fa-atom",
+    "department": "TE",
+    "departments": ["TE", "ICT"],
+    "image": "public/photos/cslab3.jpg",
+    "shortDescription": "Engineering-focused facility for testing materials performance in electronics, energy, and textile applications."
+  },
+  {
+    "id": 7,
+    "title": "Animal House Lab",
+    "description": "Supports preclinical experimental studies with controlled animal care, protocol-compliant testing environments, and translational pharmacological research workflows.",
+    "meta": ["Research Facility", "Veterinary Medicine and Animal Science"],
+    "icon": "fas fa-paw",
+    "department": "Veterinary Medicine and Animal Science",
+    "departments": ["Veterinary Medicine and Animal Science"],
+    "image": "public/photos/community.jpg",
+    "shortDescription": "Regulated preclinical research setting for in vivo model studies, therapeutic validation, and safety assessment."
   }
 ]

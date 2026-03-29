@@ -8,5 +8,20 @@
     <div class="row g-4" id="facilities-grid">
       <!-- Injected via JS -->
     </div>
+
+    <div class="facility-modal" id="facility-modal" aria-hidden="true">
+      <div class="facility-modal-backdrop" data-facility-modal-backdrop></div>
+      <div class="facility-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="facility-modal-title">
+        <button class="facility-modal-close" id="facility-modal-close" type="button" aria-label="Close facility details">&times;</button>
+        <div class="facility-modal-image-wrap">
+          <img id="facility-modal-image" src="" alt="Facility image" loading="lazy" />
+        </div>
+        <div class="facility-modal-body">
+          <h3 id="facility-modal-title"></h3>
+          <p class="facility-modal-department" id="facility-modal-department"></p>
+          <p class="facility-modal-description" id="facility-modal-description"></p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

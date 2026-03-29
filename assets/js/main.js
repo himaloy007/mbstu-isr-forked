@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     "collaborators",
     "funding",
     "output",
-    "gallery",
     "footer"
   ];
 
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     setTimeout(() => {
       loader.style.display = "none";
       initAnimations();
-      initFundingBars(); // trigger bars when loaded
     }, 600);
   }
 });
@@ -73,17 +71,6 @@ function initAnimations() {
     }
     observer.observe(el);
   });
-}
-
-function initFundingBars() {
-  setTimeout(() => {
-    document.querySelectorAll('.funding-bar-fill').forEach(bar => {
-      const width = bar.getAttribute('data-width');
-      if (width) {
-        bar.style.width = width + '%';
-      }
-    });
-  }, 1000); // little delay for better UX
 }
 
 function initMobileNav() {
@@ -128,8 +115,7 @@ async function populateData() {
     loadGrants(),
     loadCollaborators(),
     loadFunding(),
-    loadOutputs(),
-    loadGallery()
+    loadOutputs()
   ]);
 }
 
@@ -179,22 +165,158 @@ async function loadFacilities() {
   const container = document.getElementById('facilities-grid');
   if(!container) return;
 
-  container.innerHTML = data.map(item => `
+  const modal = document.getElementById('facility-modal');
+  const modalTitle = document.getElementById('facility-modal-title');
+  const modalImage = document.getElementById('facility-modal-image');
+  const modalDepartment = document.getElementById('facility-modal-department');
+  const modalDescription = document.getElementById('facility-modal-description');
+  const modalClose = document.getElementById('facility-modal-close');
+  const modalBackdrop = document.querySelector('[data-facility-modal-backdrop]');
+  const modalDialog = modal?.querySelector('.facility-modal-dialog');
+  let modalResizeObserver = null;
+
+  // Keep modal under body so fixed positioning is always viewport-based,
+  // even if section ancestors have transforms/filters.
+  if (modal && modal.parentElement !== document.body) {
+    document.body.appendChild(modal);
+  }
+
+  const queueCenterModal = () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(centerModalDialog);
+    });
+  };
+
+  const updateOverlayDimensions = () => {
+    if (!modal || !modal.classList.contains('is-open')) return;
+    const viewport = window.visualViewport;
+    const viewportWidth = viewport?.width || window.innerWidth;
+    const viewportHeight = viewport?.height || window.innerHeight;
+
+    modal.style.width = `${Math.round(viewportWidth)}px`;
+    modal.style.height = `${Math.round(viewportHeight)}px`;
+  };
+
+  const centerModalDialog = () => {
+    if (!modalDialog || !modal?.classList.contains('is-open')) return;
+
+    const viewport = window.visualViewport;
+    const viewportWidth = viewport?.width || window.innerWidth;
+    const viewportHeight = viewport?.height || window.innerHeight;
+    const viewportOffsetLeft = viewport?.offsetLeft || 0;
+    const viewportOffsetTop = viewport?.offsetTop || 0;
+
+    const centerLeft = viewportOffsetLeft + (viewportWidth / 2);
+    const centerTop = viewportOffsetTop + (viewportHeight / 2);
+
+    modalDialog.style.left = `${Math.round(centerLeft)}px`;
+    modalDialog.style.top = `${Math.round(centerTop)}px`;
+
+    updateOverlayDimensions();
+  };
+
+  const closeModal = () => {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.style.width = '';
+    modal.style.height = '';
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+    document.documentElement.style.overflow = '';
+  };
+
+  const openModal = (item) => {
+    if (!modal || !modalTitle || !modalImage || !modalDepartment || !modalDescription) return;
+    const departments = Array.isArray(item.departments)
+      ? item.departments
+      : (item.department ? [item.department] : []);
+    modalTitle.textContent = item.title || 'Facility Details';
+    modalDepartment.textContent = departments.length ? `Departments: ${departments.join(', ')}` : 'Departments: N/A';
+    modalDescription.textContent = item.shortDescription || item.description || '';
+    modalImage.src = encodeURI(String(item.image || ''));
+    modalImage.alt = item.title || 'Facility image';
+
+    // Re-center after image load because dimensions can change significantly.
+    modalImage.onload = queueCenterModal;
+    modalImage.onerror = queueCenterModal;
+
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.overflow = 'hidden';
+    document.body.style.paddingRight = `${Math.max(0, scrollBarWidth)}px`;
+    document.documentElement.style.overflow = 'hidden';
+
+    updateOverlayDimensions();
+    queueCenterModal();
+
+    if (modalImage.complete) {
+      queueCenterModal();
+    }
+  };
+
+  container.innerHTML = data.map((item, idx) => {
+    const departments = Array.isArray(item.departments)
+      ? item.departments
+      : (item.department ? [item.department] : []);
+
+    return `
     <div class="col-12 col-lg-6">
-      <div class="facility-card">
+      <div class="facility-card" role="button" tabindex="0" data-facility-index="${idx}" aria-label="Open ${item.title} details">
         <div class="facility-icon">
           <i class="${item.icon}"></i>
         </div>
         <div class="facility-content">
           <h5>${item.title}</h5>
           <p>${item.description}</p>
+          <div class="facility-departments">
+            ${departments.map(dep => `<span class="dept-chip">${dep}</span>`).join('')}
+          </div>
           <div class="facility-meta">
             ${item.meta.map(m => `<span>${m}</span>`).join('')}
           </div>
         </div>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
+
+  container.querySelectorAll('.facility-card').forEach((card) => {
+    const index = Number(card.getAttribute('data-facility-index'));
+    card.addEventListener('click', () => openModal(data[index]));
+    card.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openModal(data[index]);
+      }
+    });
+  });
+
+  if (modal && !modal.dataset.bound) {
+    modalClose?.addEventListener('click', closeModal);
+    modalBackdrop?.addEventListener('click', closeModal);
+    window.addEventListener('resize', queueCenterModal);
+    window.addEventListener('scroll', queueCenterModal, { passive: true });
+
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', queueCenterModal);
+      window.visualViewport.addEventListener('scroll', queueCenterModal);
+    }
+
+    if (typeof ResizeObserver !== 'undefined' && modalDialog) {
+      modalResizeObserver = new ResizeObserver(queueCenterModal);
+      modalResizeObserver.observe(modalDialog);
+    }
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.classList.contains('is-open')) {
+        closeModal();
+      }
+    });
+    modal.dataset.bound = 'true';
+  }
 }
 
 async function loadGrants() {
@@ -255,38 +377,38 @@ async function loadCollaborators() {
 async function loadFunding() {
   const res = await fetch('assets/data/funding.json');
   const data = await res.json();
-  
-  const chartBox = document.getElementById('funding-chart');
-  if(chartBox) {
-    chartBox.innerHTML += data.breakdown.map(item => `
-      <div class="funding-bar-wrap">
-        <div class="funding-label">
-          <span>${item.source}</span>
-          <span class="pct">${item.percentage}%</span>
-        </div>
-        <div class="funding-bar-track">
-          <div class="funding-bar-fill" data-width="${item.percentage}"></div>
-        </div>
-      </div>
-    `).join('');
-  }
 
-  const cardsBox = document.getElementById('funding-cards');
-  if(cardsBox) {
-    cardsBox.innerHTML = data.cards.map(item => `
-      <div class="col-12 col-sm-6">
-        <div class="funding-source-card">
-          <div class="funding-source-icon" style="background:${item.bg}; color:${item.color};">
-            <i class="${item.icon}"></i>
-          </div>
-          <div class="funding-source-content">
-            <h6>${item.title}</h6>
-            <p>${item.description}</p>
-          </div>
+  const grid = document.getElementById('funding-sponsors-grid');
+  if (!grid) return;
+
+  const sponsors = Array.isArray(data.sponsors) ? data.sponsors : [];
+  const escapeHtml = (value) => String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  const iconForSponsor = (name) => {
+    const normalized = String(name).toLowerCase();
+    if (normalized.includes('ministry') || normalized.includes('department')) return 'fas fa-landmark';
+    if (normalized.includes('university') || normalized.includes('college') || normalized.includes('institute')) return 'fas fa-university';
+    if (normalized.includes('science') || normalized.includes('research')) return 'fas fa-flask';
+    if (normalized.includes('foundation') || normalized.includes('council') || normalized.includes('commission')) return 'fas fa-handshake';
+    if (normalized.includes('national')) return 'fas fa-flag';
+    return 'fas fa-globe';
+  };
+
+  grid.innerHTML = sponsors.map((name) => {
+    return `
+      <article class="funding-sponsor-card">
+        <div class="funding-sponsor-icon">
+          <i class="${iconForSponsor(name)}" aria-hidden="true"></i>
         </div>
-      </div>
-    `).join('');
-  }
+        <h6>${escapeHtml(name)}</h6>
+      </article>
+    `;
+  }).join('');
 }
 
 async function loadOutputs() {
