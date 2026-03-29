@@ -1,62 +1,92 @@
 [
   {
     "id": 1,
-    "amount": "৳ 85,00,000",
-    "title": "AI-Driven Early Warning System for Flash Floods in Tangail District",
-    "description": "Developing a machine learning model integrating satellite data and IoT river sensors to provide 48-hour advance flood warnings to vulnerable communities.",
+    "amount": "Project ID: 11026",
+    "title": "Novel Bacteriophage-Based Strategies for the Eradication of Waterborne Microbes Causing Several Epidemics",
+    "description": "Explores bacteriophage-based biocontrol mechanisms targeting pathogenic waterborne microorganisms for epidemic prevention.",
     "status": "Active",
     "statusClass": "status-active",
-    "pi": "Prof. Dr. M. A. Rahman",
-    "year": "2024 - 2026"
+    "pi": "Dr. Mohammod Johirul Islam",
+    "year": "2025 - 2026"
   },
   {
     "id": 2,
-    "amount": "USD 48,000",
-    "title": "Climate-Resilient Rice Varieties Using CRISPR Gene Editing",
-    "description": "International collaborative research to produce salinity and drought tolerant rice strains suited for Bangladesh's coastal and flood-prone regions.",
+    "amount": "Project ID: 12327",
+    "title": "Transforming Biochemistry and Molecular Biology Education through Cutting-Edge Laboratory and Digital Resources to Meet Global Challenges",
+    "description": "Modernization of laboratory infrastructure and integration of digital learning platforms.",
     "status": "Active",
     "statusClass": "status-active",
-    "pi": "Dr. Nasrin Akter",
-    "year": "2023 - 2025"
+    "pi": "Dr. Md. Asaduzaman Sikder",
+    "year": "2025 - 2026"
   },
   {
     "id": 3,
-    "amount": "৳ 60,00,000",
-    "title": "Low-Cost Dengue Rapid Diagnostic Kit Development",
-    "description": "Development of a paper-based microfluidic diagnostic device for dengue serotype detection, targeting affordability for rural health clinics.",
-    "status": "Completed",
-    "statusClass": "status-complete",
-    "pi": "Dr. Shafiqul Islam",
-    "year": "2022 - 2024"
+    "amount": "Project ID: 12326",
+    "title": "Improvement of the Teaching-Learning Atmosphere to Produce Qualified Graduate Pharmacists Ready to Address Global Health Challenges",
+    "description": "Targets pedagogical innovation and curriculum enhancement for industry-ready pharmacists.",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Professor Dr. Md. Mizanur Rahman Moghal",
+    "year": "2025 - 2026"
   },
   {
     "id": 4,
-    "amount": "৳ 1,20,00,000",
-    "title": "Smart Microgrid for Rural Electrification – Phase II",
-    "description": "Scaling a successful Phase I pilot to 10 villages in Tangail, integrating solar, storage, and community-managed smart metering systems.",
-    "status": "Under Review",
-    "statusClass": "status-pending",
-    "pi": "Dr. Kamrul Hasan",
-    "year": "2025 - 2027"
+    "amount": "Project ID: 13553",
+    "title": "Development of Low-Cost Electrochemical Sensors for the Determination and Mechanistic Investigation of Extensively Used Antibiotics Residue from Clinical, Environmental, and Food Matrices",
+    "description": "Develops affordable electrochemical sensing technologies for detecting antibiotic residues.",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Dr. Md. Abu Rashed",
+    "year": "2025 - 2026"
   },
   {
     "id": 5,
-    "amount": "USD 32,000",
-    "title": "Gender Disparities in STEM Education: A Bangladesh Perspective",
-    "description": "Mixed-methods study examining structural, social, and institutional barriers to female participation in STEM at public universities in Bangladesh.",
+    "amount": "Project No: SRG-255570",
+    "title": "Integrating PCR-RFLP and tNGS to Elucidate TP53 codon 72 Polymorphism in Osteoporosis Risk Assessment among Bangladeshi Population",
+    "description": "Science and Technology Research Grant Program 2025-26 (BMB Department).",
     "status": "Active",
     "statusClass": "status-active",
-    "pi": "Dr. Farhana Begum",
-    "year": "2024 - 2025"
+    "pi": "Professor Dr. Mohammod Johirul Islam",
+    "year": "2025 - 2026"
   },
   {
     "id": 6,
-    "amount": "৳ 45,00,000",
-    "title": "Arsenic Remediation in Groundwater Using Nano-Filtration",
-    "description": "Engineering cost-effective iron-oxide nano-filter units for point-of-use arsenic removal from tube well water across rural Tangail households.",
-    "status": "Completed",
-    "statusClass": "status-complete",
-    "pi": "Prof. Dr. S. Alam",
-    "year": "2021 - 2023"
+    "amount": "Project No: SRG-255571",
+    "title": "Characterization of deleterious missense SNPs in the LIG3 gene in Acute Myeloid Leukemia Patients in Bangladesh: An Integrated Dry and Wet Lab Study",
+    "description": "Science and Technology Research Grant Program 2025-26 (BMB Department).",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Assistant Professor Dr. Mohammad Nasir Uddin",
+    "year": "2025 - 2026"
+  },
+  {
+    "id": 7,
+    "amount": "Project No: SRG-255572",
+    "title": "Mechanistic Insights into Arsenic-Induced Metabolic Disorders: Developing Plant-Based Targeted Preventive Therapeutics via In Vivo, In Vitro, and In Silico Approaches in Animal Models",
+    "description": "Science and Technology Research Grant Program 2025-26 (BMB Department).",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Associate Professor Dr. Khairul Islam",
+    "year": "2025 - 2026"
+  },
+  {
+    "id": 8,
+    "amount": "Project No: SRG-255573",
+    "title": "Identification of upregulated hub genes in non-small cell lung cancer and the effect of chitosan-TPP encapsulated quercetin nanoparticles (QCS-NPs) on hub genes as a therapeutic candidate",
+    "description": "Science and Technology Research Grant Program 2025-26 (BMB Department).",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Professor Dr. Md. Asaduzzaman Sikder",
+    "year": "2025 - 2026"
+  },
+  {
+    "id": 9,
+    "amount": "Project No : ",
+    "title": "Agri-VoiceLink: A Hybrid Conversational AI Platform to Enhance Agricultural Market Efficiency in Bangladesh",
+    "description": "Special platform initiative to improve agricultural market efficiency using conversational AI.",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Nazrul Islam, Nargis Akter",
+    "year": "2025 - 2026"
   }
 ]

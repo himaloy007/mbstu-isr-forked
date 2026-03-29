@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "title": "Molecular Biology & Genomics Lab",
-    "description": "Equipped with PCR machines, gel electrophoresis systems, spectrophotometers, and a bioinformatics workstation cluster for genomic data analysis.",
-    "meta": ["Dept. of Biotechnology", "Capacity: 20"],
-    "icon": "fas fa-dna"
+    "title": "Systems Security and Innovation (SSI) Lab",
+    "description": "Focuses on cutting-edge research in cybersecurity, secure software systems, blockchain technologies, and privacy-preserving solutions. It supports the design and evaluation of resilient digital infrastructures for Industry 4.0 and smart systems.",
+    "meta": ["Research Facility", "Cybersecurity & Blockchain"],
+    "icon": "fas fa-shield-alt"
   },
   {
     "id": 2,
-    "title": "Embedded Systems & IoT Lab",
-    "description": "Advanced prototyping facility featuring oscilloscopes, FPGA boards, Raspberry Pi clusters, and 5G-ready wireless testing equipment.",
-    "meta": ["Dept. of ICT", "Capacity: 30"],
-    "icon": "fas fa-microchip"
-  },
-  {
-    "id": 3,
-    "title": "AI & High-Performance Computing Centre",
-    "description": "GPU cluster (8× NVIDIA A100) for deep learning, NLP, and computer vision research, with access to 100TB shared research data storage.",
-    "meta": ["Dept. of CSE", "24/7 Access"],
+    "title": "IoT and Robotics Lab",
+    "description": "Develops intelligent, connected systems integrating sensors, embedded platforms, and automation technologies. Emphasizes smart environments, industrial automation, and real-time data-driven robotic applications.",
+    "meta": ["Research Facility", "IoT & Automation"],
     "icon": "fas fa-robot"
   },
   {
+    "id": 3,
+    "title": "AI and Machine Learning Lab",
+    "description": "Advances research in data analytics, deep learning, natural language processing, and computer vision. Aims to solve real-world problems through intelligent algorithms and scalable AI-driven solutions.",
+    "meta": ["Research Facility", "AI & Data Science"],
+    "icon": "fas fa-brain"
+  },
+  {
     "id": 4,
-    "title": "Environmental Science Field Station",
-    "description": "Field monitoring station with automated weather systems, water sampling rigs, soil analysis kits, and satellite imagery processing workstations.",
-    "meta": ["Dept. of ENV Sci.", "Field + Lab"],
-    "icon": "fas fa-leaf"
+    "title": "Bioinformatics and Drug Designing Lab",
+    "description": "Applies computational techniques to biological data analysis and drug discovery. Focuses on genomics, proteomics, molecular modelling, and in silico drug design.",
+    "meta": ["Research Facility", "Bioinformatics"],
+    "icon": "fas fa-dna"
   },
   {
     "id": 5,
-    "title": "Renewable Energy Testing Facility",
-    "description": "1.5 MW campus solar array serving as a live testbed, supplemented by wind turbine prototyping stations and battery storage R&D units.",
-    "meta": ["Dept. of ME", "Live Testbed"],
-    "icon": "fas fa-solar-panel"
+    "title": "Molecular Biology Lab",
+    "description": "Conducts experimental research on cellular and molecular mechanisms of life. Supports studies in genetics, microbiology, and biotechnology with applications in health, agriculture, and environmental science.",
+    "meta": ["Research Facility", "Genetics & Biotechnology"],
+    "icon": "fas fa-flask"
   },
   {
     "id": 6,
-    "title": "Food Science & Nutrition Lab",
-    "description": "Fully equipped for food quality analysis, nutritional profiling, and fermentation research, supporting agri-food innovation and public health studies.",
-    "meta": ["Dept. of Food Tech.", "Capacity: 25"],
-    "icon": "fas fa-flask"
+    "title": "Material Science Lab",
+    "description": "Explores the synthesis, characterization, and application of advanced materials. Research areas include nanomaterials, polymers, and functional materials for energy, electronics, and environmental sustainability.",
+    "meta": ["Research Facility", "Advanced Materials"],
+    "icon": "fas fa-atom"
   }
 ]

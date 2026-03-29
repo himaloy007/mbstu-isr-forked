@@ -108,6 +108,39 @@
   font-style: italic;
 }
 
+.pub-card .pub-journal a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(15, 42, 74, 0.35);
+  font-style: normal;
+  font-weight: 600;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, background-size 0.2s ease;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: 0 100%;
+}
+
+.pub-card .pub-journal a:hover {
+  color: var(--color-accent);
+  text-decoration-color: rgba(230, 126, 34, 0.55);
+  background-size: 100% 2px;
+}
+
+.pub-card .pub-journal a:visited {
+  color: #5a3e8a;
+}
+
+.pub-card .pub-journal a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 .pub-card .pub-meta {
   display: flex;
   align-items: center;

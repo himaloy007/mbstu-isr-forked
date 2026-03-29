@@ -1,39 +1,78 @@
 {
   "breakdown": [
-    { "source": "Ministry of Science & Technology (MoST)", "percentage": 38 },
-    { "source": "University Grants Commission (UGC)", "percentage": 24 },
-    { "source": "International Agencies (UNDP, World Bank)", "percentage": 18 },
-    { "source": "Industry & Private Sector", "percentage": 12 },
-    { "source": "Foreign Universities & Bilateral Grants", "percentage": 8 }
+    { "source": "Ministry of Science and Technology, Government of Bangladesh", "percentage": 12 },
+    { "source": "Japan Society for the Promotion of Science", "percentage": 11 },
+    { "source": "Bangladesh Council of Scientific and Industrial Research", "percentage": 11 },
+    { "source": "University Grants Commission of Bangladesh", "percentage": 11 },
+    { "source": "UNICEF", "percentage": 11 },
+    { "source": "Trinity College, University of Oxford", "percentage": 11 },
+    { "source": "Trinity College Dublin", "percentage": 11 },
+    { "source": "RIKEN", "percentage": 11 },
+    { "source": "Wuhan Textile University", "percentage": 11 }
   ],
   "cards": [
     {
-      "title": "Ministry of Science & Technology",
-      "description": "Principal government funder supporting national priority research themes including ICT, biotech, and energy.",
+      "title": "Ministry of Science and Technology, Government of Bangladesh",
+      "description": "Major national funding body supporting science and innovation research initiatives.",
       "icon": "fas fa-landmark",
       "bg": "#fdf4f4",
       "color": "#9b2e2b"
     },
     {
-      "title": "University Grants Commission (UGC)",
-      "description": "Annual research allocation to faculty via UGC's Research and Publications Grant scheme.",
-      "icon": "fas fa-graduation-cap",
+      "title": "Japan Society for the Promotion of Science",
+      "description": "Supports collaborative and advanced research programs through international cooperation.",
+      "icon": "fas fa-globe-asia",
       "bg": "#e8f4f8",
       "color": "#004080"
     },
     {
-      "title": "International Agencies",
-      "description": "UNDP, World Bank, and FAO grants targeting climate, food security, and sustainable development research.",
-      "icon": "fas fa-globe",
+      "title": "Bangladesh Council of Scientific and Industrial Research",
+      "description": "Promotes applied science and industrially relevant research outcomes.",
+      "icon": "fas fa-flask",
       "bg": "#f0fff0",
       "color": "#155724"
     },
     {
-      "title": "Industry & Private Sector",
-      "description": "Contract research, joint development projects, and technology transfer agreements with leading Bangladeshi corporates.",
-      "icon": "fas fa-industry",
+      "title": "University Grants Commission of Bangladesh",
+      "description": "Provides academic research grants and institutional research support.",
+      "icon": "fas fa-graduation-cap",
       "bg": "#fff8e1",
       "color": "#856404"
+    },
+    {
+      "title": "UNICEF",
+      "description": "Contributes to social impact and public welfare oriented research initiatives.",
+      "icon": "fas fa-hands-helping",
+      "bg": "#eef7ff",
+      "color": "#0b5ed7"
+    },
+    {
+      "title": "Trinity College, University of Oxford",
+      "description": "International academic collaboration partner supporting research and training.",
+      "icon": "fas fa-university",
+      "bg": "#f7f3ff",
+      "color": "#5e35b1"
+    },
+    {
+      "title": "Trinity College Dublin",
+      "description": "Provides international collaboration opportunities in interdisciplinary research.",
+      "icon": "fas fa-university",
+      "bg": "#f4fff2",
+      "color": "#2e7d32"
+    },
+    {
+      "title": "RIKEN",
+      "description": "Supports advanced scientific partnership and high-impact research collaboration.",
+      "icon": "fas fa-microscope",
+      "bg": "#f2fbff",
+      "color": "#006064"
+    },
+    {
+      "title": "Wuhan Textile University",
+      "description": "Academic partner supporting textile and material science oriented research.",
+      "icon": "fas fa-atom",
+      "bg": "#fff5f0",
+      "color": "#bf360c"
     }
   ]
 }

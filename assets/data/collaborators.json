@@ -1,86 +1,100 @@
 [
   {
     "id": 1,
-    "name": "University of Dhaka",
-    "location": "Dhaka, Bangladesh",
-    "type": "National Academic",
-    "icon": "fas fa-university"
+    "name": "Bangladesh",
+    "location": "South Asia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/bangladesh.png"
   },
   {
     "id": 2,
-    "name": "BUET",
-    "location": "Bangladesh University of Engineering & Technology",
-    "type": "National Academic",
-    "icon": "fas fa-university"
+    "name": "United States",
+    "location": "North America",
+    "type": "Collaborating Country",
+    "icon": "public/collab/usa.png"
   },
   {
     "id": 3,
-    "name": "Kyushu University",
-    "location": "Fukuoka, Japan",
-    "type": "International Academic",
-    "icon": "fas fa-globe-asia"
+    "name": "Australia",
+    "location": "Oceania",
+    "type": "Collaborating Country",
+    "icon": "public/collab/australia.png"
   },
   {
     "id": 4,
-    "name": "Wageningen University",
-    "location": "Netherlands",
-    "type": "International Academic",
-    "icon": "fas fa-globe-europe"
+    "name": "Saudi Arabia",
+    "location": "Middle East",
+    "type": "Collaborating Country",
+    "icon": "public/collab/ksa.png"
   },
   {
     "id": 5,
-    "name": "IEDCR, Bangladesh",
-    "location": "Institute of Epidemiology, Disease Control & Research",
-    "type": "Government",
-    "icon": "fas fa-hospital"
+    "name": "China",
+    "location": "East Asia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/china.png"
   },
   {
     "id": 6,
-    "name": "BRRI",
-    "location": "Bangladesh Rice Research Institute",
-    "type": "Government",
-    "icon": "fas fa-seedling"
+    "name": "Canada",
+    "location": "North America",
+    "type": "Collaborating Country",
+    "icon": "public/collab/canada.png"
   },
   {
     "id": 7,
-    "name": "University of Manitoba",
-    "location": "Canada",
-    "type": "International Academic",
-    "icon": "fas fa-globe-americas"
+    "name": "Malaysia",
+    "location": "Southeast Asia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/malaysia.png"
   },
   {
     "id": 8,
-    "name": "Rahimafrooz Group",
-    "location": "Dhaka, Bangladesh",
-    "type": "Industry Partner",
-    "icon": "fas fa-industry"
+    "name": "India",
+    "location": "South Asia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/india.png"
   },
   {
     "id": 9,
-    "name": "UNDP Bangladesh",
-    "location": "United Nations Dev. Programme",
-    "type": "International Agency",
-    "icon": "fas fa-hands-helping"
+    "name": "United Kingdom",
+    "location": "Europe",
+    "type": "Collaborating Country",
+    "icon": "public/collab/united-kingdom.png"
   },
   {
     "id": 10,
-    "name": "Griffith University",
-    "location": "Queensland, Australia",
-    "type": "International Academic",
-    "icon": "fas fa-globe"
+    "name": "Japan",
+    "location": "East Asia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/japan.png"
   },
   {
     "id": 11,
-    "name": "BCSIR",
-    "location": "Bangladesh Council of Scientific & Industrial Research",
-    "type": "Government",
-    "icon": "fas fa-flask"
+    "name": "Turkey",
+    "location": "Eurasia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/turkey.png"
   },
   {
     "id": 12,
-    "name": "Square Pharmaceuticals",
-    "location": "Dhaka, Bangladesh",
-    "type": "Industry Partner",
-    "icon": "fas fa-building"
+    "name": "South Korea",
+    "location": "East Asia",
+    "type": "Collaborating Country",
+    "icon": "public/collab/south-korea.png"
+  },
+  {
+    "id": 13,
+    "name": "Netherlands",
+    "location": "Europe",
+    "type": "Collaborating Country",
+    "icon": "public/collab/netherlands.png"
+  },
+  {
+    "id": 14,
+    "name": "Italy",
+    "location": "Europe",
+    "type": "Collaborating Country",
+    "icon": "public/collab/italy.png"
   }
 ]

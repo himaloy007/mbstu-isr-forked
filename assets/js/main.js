@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     "collaborators",
     "funding",
     "output",
+    "gallery",
     "footer"
   ];
 
@@ -127,7 +128,8 @@ async function populateData() {
     loadGrants(),
     loadCollaborators(),
     loadFunding(),
-    loadOutputs()
+    loadOutputs(),
+    loadGallery()
   ]);
 }
 
@@ -229,9 +231,20 @@ async function loadCollaborators() {
   const container = document.getElementById('collaborators-grid');
   if(!container) return;
 
+  const escapeHtml = (value) => String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
   container.innerHTML = data.map(item => `
     <div class="collab-card">
-      <div class="collab-logo"><i class="${item.icon}"></i></div>
+      <div class="collab-logo">
+        ${/\.(png|jpe?g|webp|gif|svg)$/i.test(String(item.icon || ''))
+          ? `<img src="${encodeURI(item.icon)}" alt="${escapeHtml(item.name)} flag" loading="lazy" />`
+          : `<i class="${escapeHtml(item.icon)}"></i>`}
+      </div>
       <h6>${item.name}</h6>
       <p>${item.location}</p>
       <span class="collab-type">${item.type}</span>
@@ -308,6 +321,25 @@ function renderPublications(filter) {
   const pubList = document.getElementById('pub-list');
   if(!pubList || !window.allPublications) return;
 
+  const escapeHtml = (value) => String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  const renderJournalField = (journalValue) => {
+    const text = String(journalValue ?? '').trim();
+    const isUrl = /^(https?:\/\/|www\.)/i.test(text);
+
+    if (!isUrl) {
+      return escapeHtml(text);
+    }
+
+    const href = /^https?:\/\//i.test(text) ? text : `https://${text}`;
+    return `<a href="${escapeHtml(href)}" target="_blank" rel="noopener noreferrer">${escapeHtml(text)}</a>`;
+  };
+
   const filtered = filter === 'all' 
     ? window.allPublications 
     : window.allPublications.filter(p => p.type === filter);
@@ -318,7 +350,7 @@ function renderPublications(filter) {
         <div class="pub-card">
           <div class="pub-title">${pub.title}</div>
           <div class="pub-authors">${pub.authors}</div>
-          <div class="pub-journal">${pub.journal}</div>
+          <div class="pub-journal">${renderJournalField(pub.journal)}</div>
           <div class="pub-meta">
             <span class="pub-year">${pub.year}</span>
             ${pub.badge1 ? `<span class="pub-badge ${pub.badge1Class || ''}" style="${pub.badge1Style || ''}">${pub.badge1}</span>` : ''}
@@ -328,4 +360,77 @@ function renderPublications(filter) {
       `).join('')}
     </div>
   `;
+}
+
+async function loadGallery() {
+  const res = await fetch('assets/data/gallery.json');
+  const photos = await res.json();
+
+  const grid = document.getElementById('gallery-grid');
+  const prevBtn = document.getElementById('gallery-prev');
+  const nextBtn = document.getElementById('gallery-next');
+  const pageIndicator = document.getElementById('gallery-page-indicator');
+  const controls = document.getElementById('gallery-controls');
+
+  if (!grid || !prevBtn || !nextBtn || !pageIndicator) return;
+
+  if (!Array.isArray(photos) || photos.length === 0) {
+    grid.innerHTML = '<p class="section-sub">No gallery photos available yet.</p>';
+    if (controls) controls.style.display = 'none';
+    return;
+  }
+
+  const itemsPerPage = 6;
+  let currentPage = 1;
+  const totalPages = Math.ceil(photos.length / itemsPerPage);
+
+  const escapeHtml = (value) => String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  const renderPage = () => {
+    const start = (currentPage - 1) * itemsPerPage;
+    const visible = photos.slice(start, start + itemsPerPage);
+
+    grid.innerHTML = visible.map((photo, idx) => {
+      const absoluteIndex = start + idx + 1;
+      const altText = photo.alt || `Gallery image ${absoluteIndex}`;
+      const caption = photo.caption || '';
+      const safeSrc = encodeURI(String(photo.src || ''));
+
+      return `
+        <figure class="gallery-card">
+          <div class="gallery-image-wrap">
+            <img src="${safeSrc}" alt="${escapeHtml(altText)}" loading="lazy" />
+          </div>
+          <figcaption class="gallery-caption">${escapeHtml(caption)}</figcaption>
+        </figure>
+      `;
+    }).join('');
+
+    pageIndicator.textContent = `Page ${currentPage} / ${totalPages}`;
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+  };
+
+  prevBtn.addEventListener('click', () => {
+    if (currentPage > 1) {
+      currentPage -= 1;
+      renderPage();
+      grid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+
+  nextBtn.addEventListener('click', () => {
+    if (currentPage < totalPages) {
+      currentPage += 1;
+      renderPage();
+      grid.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  });
+
+  renderPage();
 }
