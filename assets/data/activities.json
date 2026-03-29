@@ -4,41 +4,41 @@
     "title": "Agri-Tech Innovation Program",
     "description": "Collaborative research combining biotechnology and agricultural science to develop climate-resilient crop varieties for Tangail region farmers.",
     "tags": ["SDG 2", "SDG 13"],
-    "icon": "agri"
+    "icon": "/public/icons/agriculture.png"
   },
   {
     "id": 2,
     "title": "Water Quality Monitoring Network",
     "description": "IoT-enabled sensor network deployed across 12 rivers in Tangail district, providing real-time data on water contamination and flood risk.",
     "tags": ["SDG 6", "SDG 11"],
-    "icon": "water"
+    "icon": "/public/icons/water.png"
   },
   {
     "id": 3,
     "title": "AI for Public Health Diagnostics",
     "description": "Deep learning models trained on local clinical datasets for early detection of dengue, diabetes, and respiratory diseases in rural Bangladesh.",
     "tags": ["SDG 3", "SDG 9"],
-    "icon": "health"
+    "icon": "/public/icons/health.png"
   },
   {
     "id": 4,
     "title": "Renewable Energy Systems Lab",
     "description": "Design and deployment of hybrid solar-wind microgrids for off-grid rural electrification, with pilot installations in 4 Tangail sub-districts.",
     "tags": ["SDG 7", "SDG 17"],
-    "icon": "energy"
+    "icon": "/public/icons/energy.png"
   },
   {
     "id": 5,
     "title": "Genomics & Bioinformatics Research",
     "description": "Population-level genomic studies in partnership with public hospitals, focusing on hereditary disease prevalence in Bangladesh's central region.",
     "tags": ["SDG 3", "SDG 4"],
-    "icon": "dna"
+    "icon": "/public/icons/lab.png"
   },
   {
     "id": 6,
     "title": "Smart & Sustainable Urban Planning",
     "description": "GIS-based spatial analysis of urbanization patterns in Tangail, informing policy on green infrastructure, traffic management, and housing equity.",
     "tags": ["SDG 11", "SDG 16"],
-    "icon": "urban"
+    "icon": "/public/icons/urban.png"
   }
 ]
