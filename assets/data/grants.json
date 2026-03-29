@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "amount": "৳ 85,00,000",
+    "title": "AI-Driven Early Warning System for Flash Floods in Tangail District",
+    "description": "Developing a machine learning model integrating satellite data and IoT river sensors to provide 48-hour advance flood warnings to vulnerable communities.",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Prof. Dr. M. A. Rahman",
+    "year": "2024 - 2026"
+  },
+  {
+    "id": 2,
+    "amount": "USD 48,000",
+    "title": "Climate-Resilient Rice Varieties Using CRISPR Gene Editing",
+    "description": "International collaborative research to produce salinity and drought tolerant rice strains suited for Bangladesh's coastal and flood-prone regions.",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Dr. Nasrin Akter",
+    "year": "2023 - 2025"
+  },
+  {
+    "id": 3,
+    "amount": "৳ 60,00,000",
+    "title": "Low-Cost Dengue Rapid Diagnostic Kit Development",
+    "description": "Development of a paper-based microfluidic diagnostic device for dengue serotype detection, targeting affordability for rural health clinics.",
+    "status": "Completed",
+    "statusClass": "status-complete",
+    "pi": "Dr. Shafiqul Islam",
+    "year": "2022 - 2024"
+  },
+  {
+    "id": 4,
+    "amount": "৳ 1,20,00,000",
+    "title": "Smart Microgrid for Rural Electrification – Phase II",
+    "description": "Scaling a successful Phase I pilot to 10 villages in Tangail, integrating solar, storage, and community-managed smart metering systems.",
+    "status": "Under Review",
+    "statusClass": "status-pending",
+    "pi": "Dr. Kamrul Hasan",
+    "year": "2025 - 2027"
+  },
+  {
+    "id": 5,
+    "amount": "USD 32,000",
+    "title": "Gender Disparities in STEM Education: A Bangladesh Perspective",
+    "description": "Mixed-methods study examining structural, social, and institutional barriers to female participation in STEM at public universities in Bangladesh.",
+    "status": "Active",
+    "statusClass": "status-active",
+    "pi": "Dr. Farhana Begum",
+    "year": "2024 - 2025"
+  },
+  {
+    "id": 6,
+    "amount": "৳ 45,00,000",
+    "title": "Arsenic Remediation in Groundwater Using Nano-Filtration",
+    "description": "Engineering cost-effective iron-oxide nano-filter units for point-of-use arsenic removal from tube well water across rural Tangail households.",
+    "status": "Completed",
+    "statusClass": "status-complete",
+    "pi": "Prof. Dr. S. Alam",
+    "year": "2021 - 2023"
+  }
+]

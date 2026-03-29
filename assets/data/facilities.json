@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Molecular Biology & Genomics Lab",
+    "description": "Equipped with PCR machines, gel electrophoresis systems, spectrophotometers, and a bioinformatics workstation cluster for genomic data analysis.",
+    "meta": ["Dept. of Biotechnology", "Capacity: 20"],
+    "icon": "fas fa-dna"
+  },
+  {
+    "id": 2,
+    "title": "Embedded Systems & IoT Lab",
+    "description": "Advanced prototyping facility featuring oscilloscopes, FPGA boards, Raspberry Pi clusters, and 5G-ready wireless testing equipment.",
+    "meta": ["Dept. of ICT", "Capacity: 30"],
+    "icon": "fas fa-microchip"
+  },
+  {
+    "id": 3,
+    "title": "AI & High-Performance Computing Centre",
+    "description": "GPU cluster (8× NVIDIA A100) for deep learning, NLP, and computer vision research, with access to 100TB shared research data storage.",
+    "meta": ["Dept. of CSE", "24/7 Access"],
+    "icon": "fas fa-robot"
+  },
+  {
+    "id": 4,
+    "title": "Environmental Science Field Station",
+    "description": "Field monitoring station with automated weather systems, water sampling rigs, soil analysis kits, and satellite imagery processing workstations.",
+    "meta": ["Dept. of ENV Sci.", "Field + Lab"],
+    "icon": "fas fa-leaf"
+  },
+  {
+    "id": 5,
+    "title": "Renewable Energy Testing Facility",
+    "description": "1.5 MW campus solar array serving as a live testbed, supplemented by wind turbine prototyping stations and battery storage R&D units.",
+    "meta": ["Dept. of ME", "Live Testbed"],
+    "icon": "fas fa-solar-panel"
+  },
+  {
+    "id": 6,
+    "title": "Food Science & Nutrition Lab",
+    "description": "Fully equipped for food quality analysis, nutritional profiling, and fermentation research, supporting agri-food innovation and public health studies.",
+    "meta": ["Dept. of Food Tech.", "Capacity: 25"],
+    "icon": "fas fa-flask"
+  }
+]

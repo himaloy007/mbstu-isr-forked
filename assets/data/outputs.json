@@ -1,0 +1,92 @@
+{
+  "stats": [
+    { "count": "120+", "label": "Journal Papers" },
+    { "count": "48", "label": "Conference Papers" },
+    { "count": "9", "label": "Patents Filed" },
+    { "count": "14", "label": "Book Chapters" },
+    { "count": "3", "label": "Edited Books" },
+    { "count": "420+", "label": "Total Citations" }
+  ],
+  "publications": [
+    {
+      "type": "journal",
+      "title": "Convolutional Neural Network-Based Detection of Dengue Fever from Clinical Blood Markers in Bangladeshi Patients",
+      "authors": "Rahman, M.A., Islam, S., Hossain, M.F., & Akter, N.",
+      "journal": "Expert Systems with Applications, 215, 119348",
+      "year": "2024",
+      "badge1": "Q1 Journal",
+      "badge1Class": "badge-q1",
+      "badge2": "IF: 8.6",
+      "badge2Class": "badge-doi"
+    },
+    {
+      "type": "journal",
+      "title": "Salinity-Tolerant Rice Gene Expression Profiles Under CRISPR-Cas9 Editing: A Transcriptomic Analysis",
+      "authors": "Akter, N., Begum, F., Islam, K.M., & Chowdhury, R.",
+      "journal": "Plant Biotechnology Journal, 22(3), 412–428",
+      "year": "2024",
+      "badge1": "Q1 Journal",
+      "badge1Class": "badge-q1",
+      "badge2": "IF: 13.8",
+      "badge2Class": "badge-doi"
+    },
+    {
+      "type": "journal",
+      "title": "Arsenic Removal Efficiency of Iron-Oxide Nano-Filters in Rural Bangladeshi Groundwater: A Field Study",
+      "authors": "Alam, S., Rahman, T., & Hasan, K.",
+      "journal": "Water Research, 248, 120812",
+      "year": "2023",
+      "badge1": "Q1 Journal",
+      "badge1Class": "badge-q1",
+      "badge2": "IF: 12.8",
+      "badge2Class": "badge-doi"
+    },
+    {
+      "type": "journal",
+      "title": "Structural Barriers to Women's Enrollment in Engineering Programs: Evidence from Bangladesh's Public Universities",
+      "authors": "Begum, F., Islam, R., & Sultana, N.",
+      "journal": "Gender and Education, 36(2), 98–116",
+      "year": "2024",
+      "badge1": "Q2 Journal",
+      "badge1Class": "badge-q2",
+      "badge2": "IF: 3.4",
+      "badge2Class": "badge-doi"
+    },
+    {
+      "type": "conference",
+      "title": "Real-Time Flood Prediction Using LSTM Networks and Satellite-Derived Precipitation Data for Tangail District",
+      "authors": "Rahman, M.A., Karim, A., & Islam, S.",
+      "journal": "Proceedings of IEEE ICDSS 2024, Singapore, pp. 214–221",
+      "year": "2024",
+      "badge2": "IEEE Xplore",
+      "badge2Class": "badge-doi"
+    },
+    {
+      "type": "conference",
+      "title": "Design of a 50kW Hybrid Solar-Wind Microgrid Controller for Rural Bangladesh: Simulation and Performance",
+      "authors": "Hasan, K., Ahmed, T., & Alam, M.S.",
+      "journal": "Proceedings of ICPERE 2023, Surabaya, Indonesia, pp. 1–7",
+      "year": "2023",
+      "badge2": "IEEE Xplore",
+      "badge2Class": "badge-doi"
+    },
+    {
+      "type": "patent",
+      "title": "Paper-Based Microfluidic Device for Point-of-Care Dengue Serotype Detection",
+      "authors": "Islam, S., Rahman, M.A., & Hossain, M.F. — MBSTU Technology Transfer Office",
+      "journal": "Bangladesh Patent Application No. BD/P/2024/00342",
+      "year": "Filed 2024",
+      "badge1": "Patent Pending",
+      "badge1Style": "background:#f3e8ff;color:#6a0dad;"
+    },
+    {
+      "type": "patent",
+      "title": "Low-Cost Iron-Oxide Nano-Filter Unit for Household Arsenic Removal from Groundwater",
+      "authors": "Alam, S. & Rahman, T. — MBSTU Technology Transfer Office",
+      "journal": "Bangladesh Patent No. BD/P/2023/00178 (Granted)",
+      "year": "Granted 2023",
+      "badge1": "Granted",
+      "badge1Style": "background:#d4edda;color:#155724;"
+    }
+  ]
+}

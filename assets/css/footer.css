@@ -1,0 +1,124 @@
+.premium-footer {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding-top: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-gold), var(--color-accent));
+}
+
+.footer-logo {
+  height: 80px;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+.footer-logo:hover { opacity: 1; }
+
+.footer-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  color: var(--color-gold);
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+}
+
+.footer-heading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 30px;
+  height: 2px;
+  background: var(--color-accent);
+}
+
+.footer-links list-style {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  transition: var(--transition-smooth);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.footer-links a::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  color: var(--color-gold);
+  transition: var(--transition-smooth);
+}
+
+.footer-links a:hover {
+  color: var(--color-gold);
+  transform: translateX(15px);
+}
+.footer-links a:hover::before {
+  opacity: 1;
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+.footer-contact a:hover {
+  color: var(--color-gold);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+}

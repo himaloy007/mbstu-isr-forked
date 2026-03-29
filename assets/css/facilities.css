@@ -1,0 +1,82 @@
+#facilities {
+  background: var(--bg-main);
+}
+
+.facility-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-smooth);
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.facility-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+  border-color: rgba(15, 42, 74, 0.2);
+}
+
+.facility-icon {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(138, 26, 36, 0.05), rgba(138, 26, 36, 0.15));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 1.8rem;
+  border: 1px solid rgba(138, 26, 36, 0.1);
+  transition: all 0.3s ease;
+}
+
+.facility-card:hover .facility-icon {
+  background: var(--color-accent);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.facility-content {
+  flex: 1;
+}
+
+.facility-content h5 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.facility-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.facility-meta {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.facility-meta span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  background: var(--bg-main);
+  color: var(--color-primary-light);
+  border: 1px solid var(--border-color);
+}
+
+@media (max-width: 576px) {
+  .facility-card { flex-direction: column; gap: 1rem; padding: 1.5rem; }
+}

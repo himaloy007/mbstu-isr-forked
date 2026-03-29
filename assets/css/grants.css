@@ -1,0 +1,109 @@
+#grants {
+  background: var(--bg-light);
+}
+
+.grant-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-white);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grant-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(15, 42, 74, 0.2);
+}
+
+.grant-header {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  padding: 1.8rem;
+  position: relative;
+}
+
+.badge-amount {
+  background: var(--color-gold);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+}
+
+.grant-header h5 {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.grant-body {
+  padding: 1.8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.grant-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.grant-footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.grant-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.grant-meta .pi {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.grant-meta .yr {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.grant-status {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  display: inline-block;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-active { background: rgba(16, 185, 129, 0.1); color: #059669; }
+.status-complete { background: rgba(59, 130, 246, 0.1); color: #2563EB; }
+.status-pending { background: rgba(245, 158, 11, 0.1); color: #D97706; }

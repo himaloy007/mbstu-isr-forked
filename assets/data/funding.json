@@ -1,0 +1,39 @@
+{
+  "breakdown": [
+    { "source": "Ministry of Science & Technology (MoST)", "percentage": 38 },
+    { "source": "University Grants Commission (UGC)", "percentage": 24 },
+    { "source": "International Agencies (UNDP, World Bank)", "percentage": 18 },
+    { "source": "Industry & Private Sector", "percentage": 12 },
+    { "source": "Foreign Universities & Bilateral Grants", "percentage": 8 }
+  ],
+  "cards": [
+    {
+      "title": "Ministry of Science & Technology",
+      "description": "Principal government funder supporting national priority research themes including ICT, biotech, and energy.",
+      "icon": "fas fa-landmark",
+      "bg": "#fdf4f4",
+      "color": "#9b2e2b"
+    },
+    {
+      "title": "University Grants Commission (UGC)",
+      "description": "Annual research allocation to faculty via UGC's Research and Publications Grant scheme.",
+      "icon": "fas fa-graduation-cap",
+      "bg": "#e8f4f8",
+      "color": "#004080"
+    },
+    {
+      "title": "International Agencies",
+      "description": "UNDP, World Bank, and FAO grants targeting climate, food security, and sustainable development research.",
+      "icon": "fas fa-globe",
+      "bg": "#f0fff0",
+      "color": "#155724"
+    },
+    {
+      "title": "Industry & Private Sector",
+      "description": "Contract research, joint development projects, and technology transfer agreements with leading Bangladeshi corporates.",
+      "icon": "fas fa-industry",
+      "bg": "#fff8e1",
+      "color": "#856404"
+    }
+  ]
+}

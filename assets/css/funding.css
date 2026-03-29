@@ -1,0 +1,103 @@
+#funding {
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg-main) 100%);
+}
+
+.funding-chart-box {
+  background: var(--color-white);
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.chart-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.funding-bar-wrap {
+  margin-bottom: 1.5rem;
+}
+
+.funding-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+  align-items: center;
+}
+
+.funding-label span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.funding-label .pct {
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.funding-bar-track {
+  height: 12px;
+  background: var(--bg-main);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.funding-bar-fill {
+  height: 100%;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 0; /* Animated via JS */
+}
+
+.funding-source-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.funding-source-card:hover {
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-4px);
+  border-color: rgba(15, 42, 74, 0.2);
+}
+
+.funding-source-icon {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  background: var(--bg-main);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.funding-source-content h6 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.funding-source-content p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}

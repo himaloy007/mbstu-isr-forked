@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "University of Dhaka",
+    "location": "Dhaka, Bangladesh",
+    "type": "National Academic",
+    "icon": "fas fa-university"
+  },
+  {
+    "id": 2,
+    "name": "BUET",
+    "location": "Bangladesh University of Engineering & Technology",
+    "type": "National Academic",
+    "icon": "fas fa-university"
+  },
+  {
+    "id": 3,
+    "name": "Kyushu University",
+    "location": "Fukuoka, Japan",
+    "type": "International Academic",
+    "icon": "fas fa-globe-asia"
+  },
+  {
+    "id": 4,
+    "name": "Wageningen University",
+    "location": "Netherlands",
+    "type": "International Academic",
+    "icon": "fas fa-globe-europe"
+  },
+  {
+    "id": 5,
+    "name": "IEDCR, Bangladesh",
+    "location": "Institute of Epidemiology, Disease Control & Research",
+    "type": "Government",
+    "icon": "fas fa-hospital"
+  },
+  {
+    "id": 6,
+    "name": "BRRI",
+    "location": "Bangladesh Rice Research Institute",
+    "type": "Government",
+    "icon": "fas fa-seedling"
+  },
+  {
+    "id": 7,
+    "name": "University of Manitoba",
+    "location": "Canada",
+    "type": "International Academic",
+    "icon": "fas fa-globe-americas"
+  },
+  {
+    "id": 8,
+    "name": "Rahimafrooz Group",
+    "location": "Dhaka, Bangladesh",
+    "type": "Industry Partner",
+    "icon": "fas fa-industry"
+  },
+  {
+    "id": 9,
+    "name": "UNDP Bangladesh",
+    "location": "United Nations Dev. Programme",
+    "type": "International Agency",
+    "icon": "fas fa-hands-helping"
+  },
+  {
+    "id": 10,
+    "name": "Griffith University",
+    "location": "Queensland, Australia",
+    "type": "International Academic",
+    "icon": "fas fa-globe"
+  },
+  {
+    "id": 11,
+    "name": "BCSIR",
+    "location": "Bangladesh Council of Scientific & Industrial Research",
+    "type": "Government",
+    "icon": "fas fa-flask"
+  },
+  {
+    "id": 12,
+    "name": "Square Pharmaceuticals",
+    "location": "Dhaka, Bangladesh",
+    "type": "Industry Partner",
+    "icon": "fas fa-building"
+  }
+]

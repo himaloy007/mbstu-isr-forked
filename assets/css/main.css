@@ -1,0 +1,191 @@
+:root {
+  color-scheme: light;
+
+  /* Premium White & Deep Maroon Palette */
+  --color-primary: #6A111E;   /* Deep Maroon */
+  --color-primary-light: #8A1A2B;
+  --color-accent: #1A1A1A;    /* Professional Dark for sharp text/buttons */
+  --color-accent-light: #333333;
+  --color-gold: #D4AF37;      /* Restrained gold accent */
+  --color-white: #FFFFFF;
+  --color-light: #F8FAFC;
+  --bg-main: #FFFFFF;         /* Strict White Background */
+  --bg-light: #F9F9F9;
+  
+  --text-main: #2D3748;       /* Very Dark Grey for readability */
+  --text-muted: #4A5568;
+  --text-light: #718096;
+
+  --border-color: #E2E8F0;
+  
+  --shadow-sm: 0 2px 4px rgba(106, 17, 30, 0.05);
+  --shadow-md: 0 4px 12px rgba(106, 17, 30, 0.08);
+  --shadow-lg: 0 12px 24px rgba(106, 17, 30, 0.12);
+  --shadow-hover: 0 20px 30px rgba(106, 17, 30, 0.15);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  
+  --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Base Buttons */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+}
+.btn-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.btn-outline-light {
+  color: var(--color-primary);
+  border-color: var(--border-color);
+  background-color: var(--color-white);
+}
+.btn-outline-light:hover {
+  background-color: var(--bg-main);
+  border-color: var(--color-primary);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Icon Resets */
+.icon-sm { width: 18px; height: 18px; display: inline-block; }
+.icon-md { width: 24px; height: 24px; display: inline-block; }
+.icon-lg { width: 32px; height: 32px; display: inline-block; }
+
+.text-gold { color: var(--color-gold) !important; }
+
+/* Section Typography & Defaults */
+.section-wrapper {
+  padding: 5rem 0;
+}
+
+.section-title {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1rem auto 0;
+  line-height: 1.6;
+}
+
+.accent-line {
+  width: 60px;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: 2px;
+  margin: 1rem auto 0;
+  position: relative;
+}
+.accent-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 4px;
+  background: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in-down {
+  animation: fadeInDown 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Stagger delays */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* Global Loading State */
+#app-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease;
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255,255,255,0.2);
+  border-left-color: var(--color-gold);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { 100% { transform: rotate(360deg); } }
+
+/* Helpers */
+.hidden { opacity: 0; pointer-events: none; }
